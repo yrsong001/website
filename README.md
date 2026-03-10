@@ -10,9 +10,22 @@ This repository is the source for **Yiran Song’s personal academic website**. 
 
 ## GitHub setup and hosting
 
+### Getting a clean URL (no repo name in the path)
+
+To have your site at **`https://<username>.github.io/`** (e.g. `https://yrsong001.github.io/`) with **no** repo name in the URL:
+
+1. **Rename the repository** to **`<username>.github.io`** (e.g. `yrsong001.github.io`).
+   - On GitHub: repo **Settings → General → Repository name** → change `yiran_website` to `yrsong001.github.io` → **Rename**.
+2. **Enable GitHub Pages** (if not already): **Settings → Pages** → Source: **Deploy from a branch** → Branch: `main`, Folder: **`/ (root)`** → Save.
+3. The site will be live at **`https://yrsong001.github.io/`** (no `/yiran_website/`).
+
+If you use any other repo name (e.g. `yiran_website`), GitHub will serve the site at `https://<username>.github.io/<repo>/`.
+
+### Initial setup (new repo)
+
 1. **Create a repository on GitHub**
-   - For a site at `https://<username>.github.io`: name the repo **`<username>.github.io`** (e.g. `yiransong.github.io`).
-   - For a site at `https://<username>.github.io/<repo>/`: use any name (e.g. **`personal-website`**, **`yiran-website`**, or **`website`**).
+   - For `https://<username>.github.io/` only: name the repo **`<username>.github.io`**.
+   - For `https://<username>.github.io/<repo>/`: use any name (e.g. `yiran_website`).
 
 2. **Connect and push** (from this directory):
    ```bash
@@ -21,17 +34,7 @@ This repository is the source for **Yiran Song’s personal academic website**. 
    git push -u origin main
    ```
 
-3. **Enable GitHub Pages**
-   - Repo **Settings → Pages**
-   - **Build and deployment**: “Deploy from a branch”
-   - Branch: `main`, Folder: **`/ (root)`**
-   - Save. The site will be at the URL shown (e.g. `https://<username>.github.io` or `https://<username>.github.io/<repo>/`).
-
-## Suggested repository names
-
-- **`yiransong.github.io`** – if you want the site at `https://yiransong.github.io`
-- **`personal-website`** or **`website`** – generic and clear for a public repo
-- **`yiran-song-website`** – descriptive and good for search
+3. **Enable GitHub Pages**: **Settings → Pages** → Deploy from branch `main`, folder **`/ (root)`**.
 
 ## Local development
 
