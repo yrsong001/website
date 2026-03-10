@@ -336,6 +336,69 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Publications page */
+.pub-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+  color: var(--text);
+}
+
+.pub-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pub-item .pub-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  line-height: 1.4;
+}
+
+.pub-item .pub-title a {
+  color: var(--text);
+}
+
+.pub-item .pub-title a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-item .pub-authors {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0 0 0.25rem;
+}
+
+.pub-item .pub-venue {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.pub-item .pub-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 0.5rem;
+}
+
+.pub-item .pub-links {
+  font-size: 0.85rem;
+}
+
+.pub-item .pub-links a {
+  margin-right: 1rem;
+}
+
 /* Footer */
 .site-footer {
   max-width: 1200px;
