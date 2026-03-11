@@ -535,6 +535,55 @@ a:hover {
   margin-right: 1rem;
 }
 
+/* Visitor map */
+.visitor-map-section {
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.visitor-map-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--text);
+}
+
+.visitor-map-wrap {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.visitor-map-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  width: 100%;
+}
+
+.visitor-map-placeholder {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Center and scale: put injected content’s center at widget center, then scale from center */
+.visitor-map-inner .visitor-map-globe,
+.visitor-map-inner > div,
+.visitor-map-inner > iframe {
+  flex-shrink: 0;
+  border: none !important;
+}
+
 /* Footer */
 .site-footer {
   max-width: 1200px;
